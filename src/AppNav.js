@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import App from './App1';
+import Calendar from './MyCalendar'
 
 import {
   BrowserRouter as Router,
@@ -36,6 +37,9 @@ export default function BasicExample() {
             <li>
               <Link to="/dashboard">Dashboard</Link>
             </li>
+            <li>
+              <Link to="/calendar">Calendar</Link>
+            </li>
           </ul>
         </nav>
 
@@ -60,6 +64,9 @@ export default function BasicExample() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/calendar">
+            <Calendar />
           </Route>
         </Switch>
       </div>
